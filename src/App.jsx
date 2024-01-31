@@ -8,6 +8,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import Members from "./pages/Members";
 import CreateProject from "./pages/CreateProject";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           path="/"
           element={
             <ProtectedRoute requireAdmin={false}>
-              <h1>Homepage</h1>
+              <Homepage />
             </ProtectedRoute>
           }
         />
