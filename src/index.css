@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  min-height: calc(100dvh - 60px);
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100dvh;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.336);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+
+.task:hover button {
+  display: inline-block;
+}
+
