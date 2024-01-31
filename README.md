@@ -1,23 +1,25 @@
-## WORKFLOW TRACKING APP FOR SMALL BUSINISSES
+## WORKFLOW TRACKING APP FOR PROJECTS MANAGEMENT
 
-### FEATURES
+#### OVERVIEW
 
-#### 1 - PROJECTS/TEAMS CREATION [SUPER ADMIN]
+Workflow Tracker is a simple project management application designed to streamline project tracking and collaboration with a team. The application operates as a Kanban-style platform, offering users the ability to create, manage, and monitor the progress of their projects.
 
-- Super user (admin) can create new projects
+> The app only has the front-end side for now.
 
-  - Project Name
-  - Due Time
-  - Priority
-  - Members
+#### TECHS:
+ - ReactJS
+ - React Router DOM
+ - Redux
+ - Tailwind CSS
 
-- Super user can register new members and create teams.
-- Affect the project to a specific team (members)
+#### HOW TO USE IT:
+  - 1: Clone project files using the following command:
 
-#### 2 - WORK ON PRJECT [TEAM MEMBERS]
-
-- Team members should have a shared Kanban board to interact with it.
-
-#### 3 - PROJECT TRACKING [SUPER ADMIN]
-
-- Super admin can check the progress of all projects and teams.
+  `git clone git@github.com:OthmaneNissoukin/react-projects-manager.git`
+    
+  - 2: Install project dependencies:
+    
+  `npm install` OR `npm i`
+    
+  - 3: Run the app:
+  `npm run dev`
