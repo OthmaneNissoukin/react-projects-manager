@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import formatDate from "./../utils/dateHelper";
 import { addProject } from "../features/projects";
 import { useNavigate } from "react-router";
@@ -16,6 +16,8 @@ function ProjectInfo() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [notes, setNotes] = useState("");
+
+  const activeUser = useSelector((store) => store.userSlice.activeUser);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -50,6 +52,7 @@ function ProjectInfo() {
       notes: notes,
       priority: null,
       lists: [],
+      members: [activeUser],
       status: "NOT STARTED",
     };
 
